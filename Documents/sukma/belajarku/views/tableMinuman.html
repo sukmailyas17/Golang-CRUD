@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    <title>Dari Ayang</title>
+</head>
+<body>
+    <a href = "/"> Home</a> ||
+    <a href = "/Makanan">Makanan</a> ||
+    <a href = "/Minuman">Minuman</a> ||
+    <a href = "/Cemilan">Cemilan</a> ||
+    <a href = "/getOrderanMakanan"> List Orderan Makanan</a> ||
+    <a href = "/getOrderanMinuman"> List Orderan Minuman</a> ||
+    <a href = "/getOrderanCemilan"> List Orderan Cemilan</a> ||
+    <h1>/Daftar Orderan Minuman</h1>
+    <table border=1>
+        <tr>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Menu</th>
+            <th>Jumlah</th>
+            <th>Catatan</th>
+        </tr>
+        {{range.}}
+        <tr>
+            <td>{{.Kode}}</td>
+            <td>{{.Nama}}</td>
+            <td>{{.Menu}}</td>
+            <td>{{.Jumlah}}</td>
+            <td>{{.Catatan}}</td>
+        </tr>
+        {{end}}
+    </table>
+</body>
+</html>
+            
+</body>
+<html>
+
